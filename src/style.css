@@ -1,0 +1,80 @@
+/* Import font */
+@import url("https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap");
+
+/* Base styles */
+body {
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 1s ease-in-out;
+    font-family: "Reddit Mono", monospace;
+}
+
+/* Container styles */
+#container {
+    border: 10px solid rgba(54, 54, 54, 0.8);
+    background-color: rgb(54, 54, 54);
+    display: flex;
+    border-radius: 15px;
+    overflow: hidden;
+    gap: 5px;
+    padding: 10px;
+    -webkit-app-region: drag;
+    font-family: "Reddit Mono", monospace;
+}
+
+/* Input styles */
+#container input {
+    -webkit-app-region: no-drag;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    background-color: #363636;
+    border: 1px solid #333;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+    font-family: "Reddit Mono", monospace;
+}
+
+/* Button styles */
+#container button {
+    -webkit-app-region: no-drag;
+    padding: 10px 20px;
+    border: none;
+    background-color: #222222;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: "Reddit Mono", monospace;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Tooltip styles */
+#tooltip {
+    margin: 0;
+    max-width: fit-content;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 1;
+    li {
+        list-style-type: none;
+    }
+}
+/* Highlight styles */
+.highlight {
+    background-color: #ccc;
+}
+/* Invalid path styles */
+.error {
+    text-decoration: red wavy underline;
+}
